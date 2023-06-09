@@ -16,3 +16,7 @@ docker run --name kibana_docker_8 -e "ELASTICSEARCH_URL=http://host.docker.inter
 # poetry add expiringdict
 # poetry env info
 # poetry export -f requirements.txt > requirements.txt
+
+
+# Could not import sentence_transformers python package. Please install it with `pip install sentence_transformers` for from langchain.embeddings import HuggingFaceEmbeddings
+# pip install sentence_transformers
