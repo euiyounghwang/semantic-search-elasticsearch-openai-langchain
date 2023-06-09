@@ -2,11 +2,13 @@ from fastapi import FastAPI
 from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import ElasticVectorSearch
 
 from config import openai_api_key
 
-embedding = OpenAIEmbeddings(openai_api_key=openai_api_key)
+# embedding = OpenAIEmbeddings(openai_api_key=openai_api_key)
+embedding = HuggingFaceEmbeddings()
 
 db = ElasticVectorSearch(
     elasticsearch_url="http://localhost:9209",
