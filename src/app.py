@@ -9,7 +9,7 @@ from config import openai_api_key
 embedding = OpenAIEmbeddings(openai_api_key=openai_api_key)
 
 db = ElasticVectorSearch(
-    elasticsearch_url="http://localhost:9200",
+    elasticsearch_url="http://localhost:9209",
     index_name="elastic-index",
     embedding=embedding,
 )

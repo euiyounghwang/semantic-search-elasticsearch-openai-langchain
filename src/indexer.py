@@ -19,7 +19,7 @@ def main():
     db = ElasticVectorSearch.from_documents(
         documents,
         embeddings,
-        elasticsearch_url="http://localhost:9200",
+        elasticsearch_url="http://localhost:9209",
         index_name="elastic-index",
     )
     print(db.client.info())
