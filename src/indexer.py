@@ -11,7 +11,7 @@ def main():
     loader = BSHTMLLoader(str(Paths.book))
     data = loader.load()
 
-    # print(data)
+    print(data)
 
     text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
         chunk_size=1000, chunk_overlap=0
