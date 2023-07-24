@@ -6,6 +6,8 @@ docker run --name kibaba-run -e "ELASTICSEARCH_URL=http://host.docker.internal:9
 # docker ps -a
 # docker rename Vagrant_New_default_1690219886 Vagrant_Omnisearch
 # Omnisearch
+# brew reinstall --cask vagrant
+# vagrant plugin update
 # vagrant ssh -- -L 9901:localhost:9201 -L 9000:localhost:9200 -L 5602:localhost:5601 -L 5603:localhost:5602 -L 5672:localhost:5672 -L 15672:localhost:15672 -L 5432:localhost:5432 -L 8080:localhost:8080
 
 # http://127.0.0.1:8000/docs
