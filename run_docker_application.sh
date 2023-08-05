@@ -1,4 +1,19 @@
 
+# docker-run.sh
+#docker run --rm -it \
+#  -e DAS_URL="" \
+#  -e ATLANTIS_USERNAME=postgres \
+#  -e ATLANTIS_DBNAME=atlantis \
+#  -e ATLANTIS_HOST=atlantis \
+#  -e ATLANTIS_B64PWD=cG9zdGdyZXM= \
+#  -e DOCUMENT_TRANSFORMER_URL="" \
+#  -e DOCUMENT_SERVICE_URL=http://document-service:8080 \
+#  -v "$SCRIPTDIR:/FN-DataAccess-Service/" \
+#  --name fn-das-run \
+#  --network fn-docker_default \
+#  -p 9002:8080 \
+#  fn-das:run
+
 # Postgres Docker
 # docker run -it --rm --name postgres-local -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
 docker run  --name postgres-local -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
