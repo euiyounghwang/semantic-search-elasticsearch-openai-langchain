@@ -16,7 +16,7 @@
 
 # Postgres Docker
 # docker run -it --rm --name postgres-local -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
-docker run  --name postgres-local -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
+docker run --name postgres-local -e POSTGRES_PASSWORD=1234 -p 15432:5432 -d postgres
 
 # Terminal
 # docker exec -it postgres-local bash
@@ -37,7 +37,7 @@ airflow webserver -p 8889
 
 # *******
 # redis
-docker run --name redis-local -d redis
+docker run --name redis-local -p 6379:6379 -d redis
 docker exec -it redis-local bash
 redis-cli --version
 redis-cli
