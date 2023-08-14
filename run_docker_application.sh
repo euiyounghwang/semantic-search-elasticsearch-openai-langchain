@@ -45,3 +45,9 @@ redis-cli
 (nil)
 #127.0.0.1:6379> set home helloWorld
 OK
+
+
+# *******
+# Rabbitmq
+#docker run -it --rm --name rabbitmq -p 15672:5672 -p 25672:15672 rabbitmq:3.12-management
+docker run --name rabbitmq -e RABBITMQ_DEFAULT_USER=euiyoung.hwang -e RABBITMQ_DEFAULT_PASS=1234 -p 15672:5672 -p 25672:15672 rabbitmq:3.12-management
